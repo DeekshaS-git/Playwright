@@ -1,0 +1,82 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.745526">
+<testsuite name="RsaLogin.spec.js" timestamp="2026-06-05T12:57:28.932Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.067" errors="0">
+<testcase name="LoginRsa test" classname="RsaLogin.spec.js" time="9.067">
+<system-out>
+<![CDATA[Let's Shop
+Let's Shop
+[
+  [32m'ADIDAS ORIGINAL$ 11500 View Add To Cart'[39m,
+  [32m'ZARA COAT 3$ 11500 View Add To Cart'[39m,
+  [32m'iphone 13 pro$ 55000 View Add To Cart'[39m
+]
+Count of products is  [33m3[39m
+ADIDAS ORIGINAL
+ZARA COAT 3
+iphone 13 pro
+Product added to cart
+Order ID is  6a22c7c217ee3e78babe7543
+Number: [33m8[39m
+Col Number: [33m7[39m
+Order Id
+Product Image
+Name
+Price
+Ordered Date
+View
+Delete
+6a22c7c217ee3e78babe7543
+
+iphone 13 pro
+$ 55000
+Fri Jun 05
+View
+Delete
+6a0585af965c23b43b189167
+
+iphone 13 pro
+$ 55000
+Thu May 14
+View
+Delete
+6a04762a965c23b43b16528d
+
+iphone 13 pro
+$ 55000
+Wed May 13
+View
+Delete
+6a0475d1965c23b43b165150
+
+iphone 13 pro
+$ 55000
+Wed May 13
+View
+Delete
+6a047544965c23b43b165071
+
+iphone 13 pro
+$ 55000
+Wed May 13
+View
+Delete
+6a047422965c23b43b164b2b
+
+iphone 13 pro
+$ 55000
+Wed May 13
+View
+Delete
+6a04736a965c23b43b1647d0
+
+iphone 13 pro
+$ 55000
+Wed May 13
+View
+Delete
+First cell data is  iphone 13 pro
+assertion passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
