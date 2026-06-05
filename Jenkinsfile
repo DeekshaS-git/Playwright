@@ -41,7 +41,6 @@ pipeline {
             // Publish HTML Report
             publishHTML([
                 allowMissing: true,
-		 (Jenkins and playwright config file updated)
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
                 reportName: 'Playwright Test Report',
