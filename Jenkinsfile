@@ -36,6 +36,7 @@ pipeline {
             
             // Publish HTML Report
             publishHTML([
+                allowMissing: true,
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
                 reportName: 'Playwright Test Report',
