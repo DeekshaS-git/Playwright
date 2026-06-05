@@ -36,7 +36,10 @@ pipeline {
             
             // Publish HTML Report
             publishHTML([
+<<<<<<< HEAD
                 allowMissing: true,
+=======
+>>>>>>> abc3b53 (first commit)
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
                 reportName: 'Playwright Test Report',
