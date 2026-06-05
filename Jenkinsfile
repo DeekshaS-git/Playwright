@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS'
+    }
+
     environment {
         NODE_ENV = 'ci'
         CI = 'true'
@@ -36,10 +40,8 @@ pipeline {
             
             // Publish HTML Report
             publishHTML([
-<<<<<<< HEAD
                 allowMissing: true,
-=======
->>>>>>> abc3b53 (first commit)
+		 (Jenkins and playwright config file updated)
                 reportDir: 'playwright-report',
                 reportFiles: 'index.html',
                 reportName: 'Playwright Test Report',
@@ -48,9 +50,9 @@ pipeline {
             ])
 
             // Publish Test Results
-            junit testResults: 'test-results/**/*.xml', 
-                   allowEmptyResults: true,
-                   skipPublishingChecks: true
+           // junit testResults: 'test-results/**/*.xml', 
+             //      allowEmptyResults: true,
+               //    skipPublishingChecks: true 
 
             // Archive Screenshots
             archiveArtifacts artifacts: 'screenshots/**/*.png', 
