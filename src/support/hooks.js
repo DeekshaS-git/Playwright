@@ -1,6 +1,9 @@
 
 const { Before, After } = require('@cucumber/cucumber');
 const { chromium, firefox, webkit } = require('@playwright/test');
+const { setDefaultTimeout } = require('@cucumber/cucumber');
+
+setDefaultTimeout(60 * 1000);
 
 Before(async function () {
   const browserName = process.env.BROWSER || 'chromium';

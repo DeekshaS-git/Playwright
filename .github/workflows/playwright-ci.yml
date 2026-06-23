@@ -24,7 +24,7 @@ jobs:
         run: docker build -t playwright-framework .
 
       - name: Run Tests in Docker
-        run: docker run -e BASE_URL=${{ env.BASE_URL }} -e CI=true playwright-framework
+        run: docker run -e BASE_URL=${{ env.BASE_URL }} -e CI=true -e HEADLESS=true playwright-framework
 
       - name: Upload Playwright Report
         if: always()
