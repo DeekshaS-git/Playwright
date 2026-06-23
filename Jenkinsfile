@@ -8,6 +8,7 @@ pipeline {
     environment {
         NODE_ENV = 'ci'
         CI = 'true'
+        BASE_URL = 'https://www.amazon.in' // as .env was not loading for jenkins
     }
 
     stages {
