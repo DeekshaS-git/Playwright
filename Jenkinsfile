@@ -36,10 +36,13 @@ pipeline {
 
         stage('Run Docker Tests') {
             steps {
-                sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker --version'
-                sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker build -t playwright-framework .'
-                sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker run playwright-framework'
-            }
+                stage('Run Docker Tests') {
+    steps {
+             sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker --version'
+             sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker build -t playwright-framework .'
+              sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker run -e BASE_URL=$BASE_URL -e CI=true playwright-framework'
+        }
+    }
         }
     }
 
