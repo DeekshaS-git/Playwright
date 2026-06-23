@@ -1,0 +1,211 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "amazon-product-search;search-for-a-product",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Search for a product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 683149792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the homepage",
+            "match": {
+              "location": "src/steps/search.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560896958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User searches for \"iPhone 15\"",
+            "match": {
+              "location": "src/steps/search.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2592373375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Search results for \"iPhone 15\" should be displayed",
+            "match": {
+              "location": "src/steps/search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 826183584
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30928041
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "amazon-product-search;search-for-a-product",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Search for a product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 183251624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the homepage",
+            "match": {
+              "location": "src/steps/search.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335612292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User searches for \"Samsung Galaxy\"",
+            "match": {
+              "location": "src/steps/search.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 851153124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Search results for \"Samsung Galaxy\" should be displayed",
+            "match": {
+              "location": "src/steps/search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 824522583
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 25539582
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "amazon-product-search;search-for-a-product",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Search for a product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 290726541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the homepage",
+            "match": {
+              "location": "src/steps/search.steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 337801375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "User searches for \"OnePlus\"",
+            "match": {
+              "location": "src/steps/search.steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2296564375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Search results for \"OnePlus\" should be displayed",
+            "match": {
+              "location": "src/steps/search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 840558416
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19301459
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "amazon-product-search",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Amazon Product Search",
+    "tags": [],
+    "uri": "features/search.feature"
+  }
+]

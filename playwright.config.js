@@ -13,7 +13,8 @@ const config= ({
   
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    [['html', { outputFolder: 'playwright-report', open: 'never' }]],,
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+    ['allure-playwright'],
     ['junit', { outputFile: 'test-results/results.xml' }],
     ['list']
   ],

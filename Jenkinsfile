@@ -32,6 +32,13 @@ pipeline {
                 sh 'npm run test || true'
             }
         }
+
+        stage('Run Docker Tests') {
+            steps {
+                sh 'docker build -t playwright-framework .'
+                sh 'docker run playwright-framework'
+            }
+        }
     }
 
     post {

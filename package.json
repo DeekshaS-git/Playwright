@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
+    "test": "npxplaywright test",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
     "test:debug": "playwright test --debug",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
@@ -11,12 +13,25 @@
     "test:ci": "CI=true playwright test",
     "test:specific": "playwright test --grep"
   },
-  "keywords": ["playwright", "automation", "testing", "e2e"],
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e"
+  ],
   "author": "Deeksha Sharma",
   "license": "ISC",
   "description": "Playwright E2E Test Framework with Jenkins CI-CD",
   "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "allure-playwright": "^3.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "exceljs": "^4.4.0",
+    "pg": "^8.21.0",
+    "xlsx": "^0.18.5"
   }
 }
