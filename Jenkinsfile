@@ -35,8 +35,9 @@ pipeline {
 
         stage('Run Docker Tests') {
             steps {
-                sh 'docker build -t playwright-framework .'
-                sh 'docker run playwright-framework'
+                sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker --version'
+                sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker build -t playwright-framework .'
+                sh 'export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" && docker run playwright-framework'
             }
         }
     }
@@ -65,10 +66,7 @@ pipeline {
                             allowEmptyArchive: true
 
             // Clean up old builds (keep last 30)
-            cleanWs(
-                deleteDirs: true,
-                patterns: [[pattern: 'playwright-report/**', type: 'INCLUDE']]
-            )
+            deleteDir()
         }
 
         success {
