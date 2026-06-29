@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: playwright-test-job
+spec:
+  template:
+    spec:
+      containers:
+        - name: playwright-tests
+          image: deekshas1dock/playwright-framework:latest
+          imagePullPolicy: Always
+          env:
+            - name: BASE_URL
+              value: "https://www.amazon.in"
+            - name: CI
+              value: "true"
+      restartPolicy: Never
+      dnsPolicy: ClusterFirst
+  backoffLimit: 0
