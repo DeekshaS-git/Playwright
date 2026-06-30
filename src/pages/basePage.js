@@ -6,7 +6,7 @@ class BasePage {
 
     async launchApplication() {
         const url = EnvManager.getBaseUrl();
-        await this.page.goto(EnvManager.getBaseUrl());
+        
          if (!url) {
             throw new Error('BASE_URL is missing. Please check .env, Jenkinsfile, Docker, or Kubernetes env.');
         }
